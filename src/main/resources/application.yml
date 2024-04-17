@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: testCRUD
+
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+
+  datasource:
+    hikari:
+      driver-class-name: org.h2.Driver
+      jdbc-url:  jdbc:h2:tcp://localhost/~/test
+      username: sa
+      password:
+
+server:
+  port: 80
