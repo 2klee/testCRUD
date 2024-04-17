@@ -50,9 +50,13 @@
     </header>
 
     <main id="main">
+        <div th:each="post: ${posts}">
+            <h2 th:text="${post.title}"></h2>
+            <p th:text="${post.content}"></p>
+        </div>
+
+
         <a href="/post/create"><button class="btn btn-primary">글쓰기</button></a>
-
-
     </main>
 
     <footer>
